@@ -1,5 +1,4 @@
-Universal Résumé Template
----------
+## Universal Résumé Template
 
 Minimal and formal résumé (CV) website template for print, mobile, and desktop. The proportions are the same on the screen and paper. Built with amazing [Tailwind CSS](https://tailwindcss.com/).
 
@@ -14,8 +13,7 @@ Yes. Replace every `-letter` with `-a4`, and uncomment specified code blocks. Mo
 **Why it’s made?**  
 I couldn’t find any formal or professional résumé (CV) website with good typography that is optimized for the Web, print, PDF, and mobile. Also, researching what recruiters want, my priorities were fast scanning time and all content to fit on one page.
 
-How to run it
----------
+## How to run it
 
 Navigate to the base directory:
 
@@ -41,20 +39,17 @@ Only generate CSS that is used on the page which results in a much smaller file 
 npm run build
 ```
 
-Starting Point
----------
+## Starting Point
 
 `docs/index.html` is the main content file. By copying HTML: add pages, sec­tions, subsection, and other parts.
 
 `npm run build` will make **docs** directory ready for drag-n-drop to, for example, https://app.netlify.com/drop (free registration required beforehand). Also, with additionally running `git add docs/styles.css -f` and committing changes, it’s ready for the push to GitHub and integration with GitHub Pages. It may take some time for changes to occur. GitHub Pages are set by configuring `Settings → Options → GitHub Pages → Source → /docs` (free for public repos).
 
-Tailwind CSS
----------
+## Tailwind CSS
 
 Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override. It has great [documentation](https://tailwindcss.com/docs/installation).
 
-Custom CSS
----------
+## Custom CSS
 
 Code from `tailwind.config.js` and `tailwind.css` transpiles to `docs/style.css`. Default Tailwind CSS is overwritten or extended with `tailwind.config.js`.
 
@@ -62,13 +57,11 @@ Here is the default tailwind config: [defaultConfig.stub.js](https://github.com/
 
 If you want to change CSS in the classical way, add a class to the HTML element and write CSS inside `tailwind.css`.
 
-Balanced Columns
----------
+## Balanced Columns
 
 Removing `col-fill-auto` class will make both columns equally tall. Moreover, removing `md:h-letter` and `md:h-letter-col` classes will eliminate fixed proportions of the letter or A4 page — thereby removing unnecessary vertical space when displaying short columns.
 
-A4 Size Variant
----------
+## A4 Size Variant
 
 Change the default (letter) size to A4:
 
@@ -80,8 +73,7 @@ Change the default (letter) size to A4:
 
 **Important:** Too much content on one page will break the page in the form of additional columns.
 
-Printing
----------
+## Printing
 
 ### Chrome
 
@@ -102,43 +94,45 @@ File → Print.
 
 By clicking on the **Page Setup** button, you are taken to the window with A4 and Letter options.
 
-Blocking Search Engines
----------
+## Blocking Search Engines
 
 Disable search engine indexing by adding the following code to the `<head>`:
 
 ```html
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex" />
 ```
 
-Language Support
----------
+## Language Support
 
 With [FiraGO](https://github.com/bBoxType/FiraGO) typeface, this résumé supports the following scrips: Latin, Cyrillic, Greek, Vietnamese, Arabic, Thai, Georgian, Devanagari, and Hebrew.
 
 If you want to significantly speed up font loading time, find out what fonts you are using (under developer tools network panel) and add them to the `head` like so:
 
 ```html
-<link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous">
+<link
+  rel="preload"
+  href="./fonts/FiraGO-Regular.latin.woff2"
+  as="font"
+  crossorigin="anonymous"
+/>
 ```
 
-Contact Me / Hire Me
----------
+## Contact Me / Hire Me
 
 If you have any question, comment, or issue, please let me know via:
+
 - hi@webpraktikos.com
 - https://twitter.com/webpraktikos
 - or open an issue on GitHub (Issues → New issue)
 
-License
----------
+## License
 
 NonCommercial-ShareAlike 1.0 Generic (CC NC-SA 1.0)  
 https://creativecommons.org/licenses/nc-sa/1.0/
 
 ### You are free to:
 
-Share — copy and redistribute the material in any medium or format  
+Share — copy and redistribute the material in any medium or format
 
 Adapt — remix, transform, and build upon the material
 
